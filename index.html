@@ -1,100 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>LevaPrueba - Blog Glassmorphism</title>
-<style>
-  body {
-    margin: 0;
-    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
-    background-size: cover;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    overflow-x: hidden;
-  }
-  header {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    backdrop-filter: blur(12px);
-    background: rgba(255,255,255,0.1);
-    border-radius: 15px;
-    padding: 1rem 2rem;
-    border: 1px solid rgba(255,255,255,0.3);
-    width: 100%;
-    max-width: 900px;
-    text-align: center;
-  }
-  .blog-container {
-    display: flex;
-    gap: 1rem;
-    overflow-x: auto;
-    width: 100%;
-    max-width: 900px;
-    padding-bottom: 1rem;
-    scroll-behavior: smooth;
-  }
-  .blog-container::-webkit-scrollbar {
-    height: 10px;
-  }
-  .blog-container::-webkit-scrollbar-thumb {
-    background: rgba(255,255,255,0.3);
-    border-radius: 10px;
-  }
-  article {
-    flex: 0 0 300px;
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 15px;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    padding: 1rem 1.5rem;
-  }
-  article h2 {
-    margin-top: 0;
-    font-size: 1.25rem;
-  }
-  article p {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-  /* Responsive */
-  @media(max-width: 600px) {
-    .blog-container {
-      max-width: 100%;
-      padding: 0 1rem;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ranking Productos Más Vendidos</title>
+  <style>
+    /* Fondo blanco puro estilo Apple */
+    body {
+      margin: 0;
+      background-color: #fff; /* blanco puro */
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      color: #1d1d1f; /* gris oscuro típico Apple */
+      line-height: 1.6;
+      padding: 2rem;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    article {
-      flex: 0 0 250px;
+
+    h1, h2 {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
     }
-  }
-</style>
+
+    h1 {
+      font-size: 2rem;
+      border-bottom: 1px solid #d1d1d6;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 1.5rem;
+    }
+
+    p {
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    /* Contenedor estilo glassmorphism sutil para cada sección */
+    section {
+      background: rgba(255 255 255 / 0.7);
+      border-radius: 15px;
+      box-shadow: 0 8px 32px rgba(0 0 0 / 0.05);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(0 0 0 / 0.05);
+      padding: 1.5rem 2rem;
+      margin-bottom: 2rem;
+    }
+
+    /* Enlaces sutiles */
+    a {
+      color: #0071e3;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
 </head>
 <body>
-  <header>LevaPrueba Blog</header>
-  <div class="blog-container">
-    <article>
-      <h2>Primer artículo</h2>
-      <p>Este es un ejemplo de un artículo de blog con efecto glassmorphism. Puedes escribir aquí cualquier contenido que desees compartir.</p>
-    </article>
-    <article>
-      <h2>Segundo artículo</h2>
-      <p>El diseño usa tarjetas translúcidas con fondo borroso y bordes delicados para un aspecto moderno y elegante.</p>
-    </article>
-    <article>
-      <h2>Tercer artículo</h2>
-      <p>La sección se puede deslizar horizontalmente para ver más artículos, ideal para mostrar múltiples entradas en espacio limitado.</p>
-    </article>
-    <article>
-      <h2>Cuarto artículo</h2>
-      <p>El diseño es responsivo, para que se adapte bien a pantallas pequeñas como móviles y tablets.</p>
-    </article>
-  </div>
+  <h1>Ranking de los 7 productos más vendidos en Amazon en España</h1>
+
+  <section>
+    <h2>1. Serum facial con vitamina C</h2>
+    <p>Los productos de la categoría de belleza siempre aparecen entre los más vendidos.</p>
+    <p>En este caso, este artículo de cuidado dérmico, hidratante, antiarrugas y antimanchas para la cara es un éxito de ventas en Amazon.</p>
+  </section>
+
+  <section>
+    <h2>2. Contenedor de pañales</h2>
+    <p>Otra de las categorías que triunfan en Amazon es la de bebés.</p>
+    <p>Los artículos para recién nacidos están entre los productos más vendidos de Amazon. Ya que sus progenitores suelen estar ocupando su tiempo en otras cosas, como cuidar de la criatura (o simplemente sobrevivir). Los pañales puestos en casa pueden ser un salvavidas.</p>
+    <p>Y también este contenedor, dispensador, con sistema de desecho de pañales, todo en uno, es uno de esos productos que más se venden en Amazon.</p>
+  </section>
+
+  <section>
+    <h2>3. Memoria flash USB</h2>
+    <p>Parecía que el almacenamiento en la nube iba a complicarle la vida a este tipo de artículos, pero lo cierto es que siguen siendo muy cómodos y no requieren de conexión a Internet para funcionar.</p>
+    <p>La posibilidad de transportar tus archivos en el llavero coloca a las memorias flash entre los productos más vendidos en Amazon.</p>
+  </section>
+
+  <section>
+    <h2>4. Fire TV Stick</h2>
+    <p>La experiencia de ver televisión en streaming en Full HD con este aparatito que se conecta a tu tele y te da acceso a plataformas, canales y algunas de las funcionalidades de Alexa.</p>
+    <p>Ya empieza a ser un clásico en la lista de los productos con más demanda en Amazon.</p>
+  </section>
+
+  <section>
+    <h2>5. Mochila de viaje para mujer</h2>
+    <p>Los artículos de moda, como veremos luego, siempre son productos que se venden rápido.</p>
+    <p>Pero eso no se limita a camisetas, pantalones, zapatos, etc. (que también), si no que en esta categoría también entran muchos tipos de complementos.</p>
+  </section>
+
+  <section>
+    <h2>6. Freidora de aire</h2>
+    <p>Las freidoras de aire se han convertido en la última incorporación de éxito en el mundo de los electrodomésticos de cocina.</p>
+    <p>Su precio razonable, la gran variedad de recetas y tipos de cocinados diferentes y saludables que permite, la han convertido en uno de los productos más vendidos en Amazon.</p>
+  </section>
+
+  <section>
+    <h2>7. Luz nocturna de LED</h2>
+    <p>Los complementos del hogar son un éxito de ventas.</p>
+    <p>Y entre los productos que más se venden en Amazon están este tipo de “artilugios”.</p>
+  </section>
+
 </body>
 </html>
