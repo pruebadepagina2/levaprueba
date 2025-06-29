@@ -1,38 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LevaPrueba - Glassmorphism</title>
-  <style>
-    body {
-      margin: 0;
-      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
-      background-size: cover;
-      font-family: sans-serif;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>LevaPrueba - Blog Glassmorphism</title>
+<style>
+  body {
+    margin: 0;
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    overflow-x: hidden;
+  }
+  header {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    backdrop-filter: blur(12px);
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    border: 1px solid rgba(255,255,255,0.3);
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+  }
+  .blog-container {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    width: 100%;
+    max-width: 900px;
+    padding-bottom: 1rem;
+    scroll-behavior: smooth;
+  }
+  .blog-container::-webkit-scrollbar {
+    height: 10px;
+  }
+  .blog-container::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.3);
+    border-radius: 10px;
+  }
+  article {
+    flex: 0 0 300px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    padding: 1rem 1.5rem;
+  }
+  article h2 {
+    margin-top: 0;
+    font-size: 1.25rem;
+  }
+  article p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  /* Responsive */
+  @media(max-width: 600px) {
+    .blog-container {
+      max-width: 100%;
+      padding: 0 1rem;
     }
-    .card {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 16px;
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      padding: 2rem;
-      max-width: 400px;
-      color: white;
-      text-align: center;
+    article {
+      flex: 0 0 250px;
     }
-  </style>
+  }
+</style>
 </head>
 <body>
-  <div class="card">
-    <h1>Bienvenido a LevaPrueba</h1>
-    <p>Diseño estilo glassmorphism, moderno y listo para crecer.</p>
+  <header>LevaPrueba Blog</header>
+  <div class="blog-container">
+    <article>
+      <h2>Primer artículo</h2>
+      <p>Este es un ejemplo de un artículo de blog con efecto glassmorphism. Puedes escribir aquí cualquier contenido que desees compartir.</p>
+    </article>
+    <article>
+      <h2>Segundo artículo</h2>
+      <p>El diseño usa tarjetas translúcidas con fondo borroso y bordes delicados para un aspecto moderno y elegante.</p>
+    </article>
+    <article>
+      <h2>Tercer artículo</h2>
+      <p>La sección se puede deslizar horizontalmente para ver más artículos, ideal para mostrar múltiples entradas en espacio limitado.</p>
+    </article>
+    <article>
+      <h2>Cuarto artículo</h2>
+      <p>El diseño es responsivo, para que se adapte bien a pantallas pequeñas como móviles y tablets.</p>
+    </article>
   </div>
 </body>
 </html>
